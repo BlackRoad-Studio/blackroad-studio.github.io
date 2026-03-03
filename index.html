@@ -5,10 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BlackRoad Studio — Design. Create. Launch.</title>
   <meta name="description" content="Creative tools for design, 3D modeling, audio production, and video — the full creative stack in one place.">
-  <meta property="og:title" content="BlackRoad Studio">
+  <meta name="theme-color" content="#FF5722">
+  <link rel="canonical" href="https://blackroad-studio.github.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="BlackRoad Studio — Design. Create. Launch.">
   <meta property="og:description" content="Creative tools for design, 3D modeling, audio production, and video — the full creative stack in one place.">
-  <meta property="og:url" content="https://github.com/BlackRoad-Studio">
+  <meta property="og:url" content="https://blackroad-studio.github.io/">
+  <meta property="og:site_name" content="BlackRoad Studio">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="BlackRoad Studio — Design. Create. Launch.">
+  <meta name="twitter:description" content="Creative tools for design, 3D modeling, audio production, and video — the full creative stack in one place.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎨</text></svg>">
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -314,6 +323,13 @@
     @media (max-width: 600px) {
       .stats { flex-direction: column; }
       .stat { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.06); }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .grid-bg, h1, .org-badge .dot, .scroll-arrow { animation: none; }
+      html { scroll-behavior: auto; }
+      .btn { transition: none; }
+      .btn:hover { transform: none; }
     }
   </style>
 </head>
